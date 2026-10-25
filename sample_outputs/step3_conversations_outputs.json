@@ -1,0 +1,2542 @@
+[
+  {
+    "conversation_id": "PC002",
+    "turn": 1,
+    "scenario": "high_value_damage",
+    "language": "hi-en",
+    "order_id": "89782837",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC002",
+    "turn": 2,
+    "scenario": "high_value_damage",
+    "language": "hi-en",
+    "order_id": "89782837",
+    "customer_message": "Order number hai 8978 2837.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=89782837)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=89782837)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC002",
+    "turn": 3,
+    "scenario": "high_value_damage",
+    "language": "hi-en",
+    "order_id": "89782837",
+    "customer_message": "Last four digits 4533 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=89782837, verification_value=4533)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=89782837, verification_value=4533)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC002",
+    "turn": 4,
+    "scenario": "high_value_damage",
+    "language": "hi-en",
+    "order_id": "89782837",
+    "customer_message": "Maine Zentro Vista 43-inch 4K Smart TV damage report kiya tha. Abhi replacement approve kar do na?",
+    "agent_reply": "Kyunki yeh item ₹10,000 se zyada ka hai, main khud replacement approve nahi kar sakti. Maine ticket (TKTf08831c1132049158e7dfa008699f5dc) create kar diya hai aur Priority Resolution team ke colleague isko review karke aapse sampark karenge.",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "DWM-3",
+      "ESC-1",
+      "ESC-4"
+    ],
+    "gold_evidence": [
+      "DWM-3",
+      "ESC-1",
+      "ESC-4"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC003",
+    "turn": 1,
+    "scenario": "return_eligibility",
+    "language": "hi-en",
+    "order_id": "18599253",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC003",
+    "turn": 2,
+    "scenario": "return_eligibility",
+    "language": "hi-en",
+    "order_id": "18599253",
+    "customer_message": "Order number hai 1859 9253.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=18599253)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=18599253)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC003",
+    "turn": 3,
+    "scenario": "return_eligibility",
+    "language": "hi-en",
+    "order_id": "18599253",
+    "customer_message": "Last four digits 4265 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=18599253, verification_value=4265)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=18599253, verification_value=4265)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC003",
+    "turn": 4,
+    "scenario": "return_eligibility",
+    "language": "hi-en",
+    "order_id": "18599253",
+    "customer_message": "Kya main Kaafi Running Sneakers return kar sakti hoon?",
+    "agent_reply": "Haan, aap ise 27 October 2026 (2026-10-27) tak return kar sakte hain (15-day return window). Kyunki aap ZentroMart Plus member hain, koi pickup fee nahi lagegi.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "RET-2"
+    ],
+    "gold_evidence": [
+      "RET-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC003",
+    "turn": 5,
+    "scenario": "return_eligibility",
+    "language": "hi-en",
+    "order_id": "18599253",
+    "customer_message": "Aur refund kitne din mein aayega?",
+    "agent_reply": "Kyunki aap ZentroMart Plus member hain, refund pickup hote hi initiate ho jayega aur aapke ZentroMart Wallet mein turant (instant, within 2 hours / 2 ghante ke andar) aa jayega.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "REF-2",
+      "RET-7",
+      "PLS-2"
+    ],
+    "gold_evidence": [
+      "REF-2",
+      "RET-7",
+      "PLS-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC004",
+    "turn": 1,
+    "scenario": "return_eligibility",
+    "language": "hi",
+    "order_id": "79363550",
+    "customer_message": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "agent_reply": "नमस्ते! मैं ZentroMart की AI (कृत्रिम बुद्धिमत्ता) सपोर्ट सहायक हूँ। कृपया अपना 8 अंकों का ऑर्डर नंबर बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC004",
+    "turn": 2,
+    "scenario": "return_eligibility",
+    "language": "hi",
+    "order_id": "79363550",
+    "customer_message": "ऑर्डर नंबर है 7936 3550।",
+    "agent_reply": "धन्यवाद। सुरक्षा जाँच के लिए कृपया अपने रजिस्टर्ड फ़ोन नंबर के आख़िरी 4 अंक (last 4 digits) या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=79363550)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=79363550)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC004",
+    "turn": 3,
+    "scenario": "return_eligibility",
+    "language": "hi",
+    "order_id": "79363550",
+    "customer_message": "आख़िरी चार अंक 2949 हैं।",
+    "agent_reply": "वेरिफ़िकेशन सफल रहा। बताइए, मैं आपके इस ऑर्डर के बारे में क्या मदद कर सकती हूँ?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=79363550, verification_value=2949)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=79363550, verification_value=2949)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC004",
+    "turn": 4,
+    "scenario": "return_eligibility",
+    "language": "hi",
+    "order_id": "79363550",
+    "customer_message": "क्या मैं UrbanThread Slim Fit Jeans वापस कर सकती हूँ?",
+    "agent_reply": "हाँ, आप इसे 13 नवंबर 2026 (2026-11-13) तक वापस कर सकते हैं (30 दिन का रिटर्न विंडो)। इस पर ₹49 की रिवर्स पिकअप फ़ीस लगेगी।",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "RET-2",
+      "RET-8",
+      "RET-6"
+    ],
+    "gold_evidence": [
+      "RET-2",
+      "RET-8",
+      "RET-6"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC004",
+    "turn": 5,
+    "scenario": "return_eligibility",
+    "language": "hi",
+    "order_id": "79363550",
+    "customer_message": "और रिफ़ंड कितने दिन में आएगा?",
+    "agent_reply": "पिकअप के बाद 2 कामकाजी दिनों में क्वालिटी चेक (QC) पूरा होने पर रिफ़ंड शुरू होता है, और UPI में आने में 1 से 3 कामकाजी दिन लगते हैं।",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "REF-2",
+      "RET-7"
+    ],
+    "gold_evidence": [
+      "REF-2",
+      "RET-7"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC005",
+    "turn": 1,
+    "scenario": "human_requested",
+    "language": "hi",
+    "order_id": "37113676",
+    "customer_message": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "agent_reply": "नमस्ते! मैं ZentroMart की AI (कृत्रिम बुद्धिमत्ता) सपोर्ट सहायक हूँ। कृपया अपना 8 अंकों का ऑर्डर नंबर बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC005",
+    "turn": 2,
+    "scenario": "human_requested",
+    "language": "hi",
+    "order_id": "37113676",
+    "customer_message": "ऑर्डर नंबर है 3711 3676।",
+    "agent_reply": "धन्यवाद। सुरक्षा जाँच के लिए कृपया अपने रजिस्टर्ड फ़ोन नंबर के आख़िरी 4 अंक (last 4 digits) या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=37113676)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=37113676)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC005",
+    "turn": 3,
+    "scenario": "human_requested",
+    "language": "hi",
+    "order_id": "37113676",
+    "customer_message": "आख़िरी चार अंक 1581 हैं।",
+    "agent_reply": "वेरिफ़िकेशन सफल रहा। बताइए, मैं आपके इस ऑर्डर के बारे में क्या मदद कर सकती हूँ?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=37113676, verification_value=1581)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=37113676, verification_value=1581)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC005",
+    "turn": 4,
+    "scenario": "human_requested",
+    "language": "hi",
+    "order_id": "37113676",
+    "customer_message": "क्या मैं किसी इंसान से बात कर सकती हूँ?",
+    "agent_reply": "जी ज़रूर, मैंने आपके ऑर्डर के लिए टिकट (TKT9d1ae484a1cc4145a400c1b5f8f1081d) बना दिया है और आपको हमारे एक मानवीय सहयोगी (human colleague) से जोड़ रही हूँ।",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "ESC-1"
+    ],
+    "gold_evidence": [
+      "ESC-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC006",
+    "turn": 1,
+    "scenario": "human_requested",
+    "language": "en",
+    "order_id": "66492475",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC006",
+    "turn": 2,
+    "scenario": "human_requested",
+    "language": "en",
+    "order_id": "66492475",
+    "customer_message": "The order number is 6649 2475.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=66492475)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=66492475)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC006",
+    "turn": 3,
+    "scenario": "human_requested",
+    "language": "en",
+    "order_id": "66492475",
+    "customer_message": "The last four digits are 6073.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=66492475, verification_value=6073)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=66492475, verification_value=6073)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC006",
+    "turn": 4,
+    "scenario": "human_requested",
+    "language": "en",
+    "order_id": "66492475",
+    "customer_message": "Actually, can I just speak to a person?",
+    "agent_reply": "Certainly. I have created a support ticket (TKT23f8093405764211b1fce89216181cbc) and am connecting you to a human colleague right away.",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "ESC-1"
+    ],
+    "gold_evidence": [
+      "ESC-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC007",
+    "turn": 1,
+    "scenario": "repeat_contact",
+    "language": "hi-en",
+    "order_id": "45011817",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC007",
+    "turn": 2,
+    "scenario": "repeat_contact",
+    "language": "hi-en",
+    "order_id": "45011817",
+    "customer_message": "Order number hai 4501 1817.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=45011817)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=45011817)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC007",
+    "turn": 3,
+    "scenario": "repeat_contact",
+    "language": "hi-en",
+    "order_id": "45011817",
+    "customer_message": "Last four digits 1267 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=45011817, verification_value=1267)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=45011817, verification_value=1267)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC007",
+    "turn": 4,
+    "scenario": "repeat_contact",
+    "language": "hi-en",
+    "order_id": "45011817",
+    "customer_message": "Main is hafte teesri baar call kar rahi hoon isi baare mein.",
+    "agent_reply": "Maaf kijiye aapko baar-baar call karna pada. Kyunki yeh is hafte aapka teesra contact hai, maine ticket (TKT64de0b2d4dbb4f73b85e40037405522d) create kar diya hai aur hamari senior support team ke colleague aapko jaldi contact karenge.",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "ESC-1",
+      "ESC-3"
+    ],
+    "gold_evidence": [
+      "ESC-1",
+      "ESC-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC008",
+    "turn": 1,
+    "scenario": "repeat_contact",
+    "language": "en",
+    "order_id": "48196636",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC008",
+    "turn": 2,
+    "scenario": "repeat_contact",
+    "language": "en",
+    "order_id": "48196636",
+    "customer_message": "The order number is 4819 6636.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=48196636)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=48196636)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC008",
+    "turn": 3,
+    "scenario": "repeat_contact",
+    "language": "en",
+    "order_id": "48196636",
+    "customer_message": "The last four digits are 7725.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=48196636, verification_value=7725)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=48196636, verification_value=7725)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC008",
+    "turn": 4,
+    "scenario": "repeat_contact",
+    "language": "en",
+    "order_id": "48196636",
+    "customer_message": "This is the third time I'm calling about this in a week.",
+    "agent_reply": "I'm sorry you've had to follow up multiple times. Since this is your third contact within 7 days, I have created a ticket (TKT6c82c53d1adf41bb8c817b720ec29511) and a human colleague from our support team will contact you shortly.",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "ESC-1",
+      "ESC-3"
+    ],
+    "gold_evidence": [
+      "ESC-1",
+      "ESC-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC009",
+    "turn": 1,
+    "scenario": "refund_status",
+    "language": "hi",
+    "order_id": "67830826",
+    "customer_message": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "agent_reply": "नमस्ते! मैं ZentroMart की AI (कृत्रिम बुद्धिमत्ता) सपोर्ट सहायक हूँ। कृपया अपना 8 अंकों का ऑर्डर नंबर बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC009",
+    "turn": 2,
+    "scenario": "refund_status",
+    "language": "hi",
+    "order_id": "67830826",
+    "customer_message": "ऑर्डर नंबर है 6783 0826।",
+    "agent_reply": "धन्यवाद। सुरक्षा जाँच के लिए कृपया अपने रजिस्टर्ड फ़ोन नंबर के आख़िरी 4 अंक (last 4 digits) या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=67830826)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=67830826)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC009",
+    "turn": 3,
+    "scenario": "refund_status",
+    "language": "hi",
+    "order_id": "67830826",
+    "customer_message": "आख़िरी चार अंक 0783 हैं।",
+    "agent_reply": "वेरिफ़िकेशन सफल रहा। बताइए, मैं आपके इस ऑर्डर के बारे में क्या मदद कर सकती हूँ?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=67830826, verification_value=0783)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=67830826, verification_value=0783)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC009",
+    "turn": 4,
+    "scenario": "refund_status",
+    "language": "hi",
+    "order_id": "67830826",
+    "customer_message": "मेरा रिफ़ंड कहाँ है?",
+    "agent_reply": "आपका रिटर्न पिकअप हो चुका है और अभी वेयरहाउस में गुणवत्ता जाँच (quality check / QC) के लिए लंबित है। QC पास होने के 2 कामकाजी दिनों के अंदर रिफ़ंड शुरू हो जाएगा।",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "RET-7",
+      "REF-1"
+    ],
+    "gold_evidence": [
+      "RET-7",
+      "REF-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC010",
+    "turn": 1,
+    "scenario": "refund_status",
+    "language": "hi-en",
+    "order_id": "16640894",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC010",
+    "turn": 2,
+    "scenario": "refund_status",
+    "language": "hi-en",
+    "order_id": "16640894",
+    "customer_message": "Order number hai 1664 0894.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=16640894)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=16640894)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC010",
+    "turn": 3,
+    "scenario": "refund_status",
+    "language": "hi-en",
+    "order_id": "16640894",
+    "customer_message": "Last four digits 2108 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=16640894, verification_value=2108)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=16640894, verification_value=2108)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC010",
+    "turn": 4,
+    "scenario": "refund_status",
+    "language": "hi-en",
+    "order_id": "16640894",
+    "customer_message": "Mera refund kahan hai?",
+    "agent_reply": "Aapka refund 2026-07-20 ko initiate hua tha (Refund Reference Number / RRN: 315633825001), jo maximum timeline se 3 business days se zyada overdue hai. Maine ticket (TKT7a22f1a40be5441eaf1aabc698f4d6cf) create kar diya hai aur hamारी support team ke colleague isko check karenge.",
+    "decision": "escalate",
+    "expected_decision": "escalate",
+    "tool_calls": [
+      "create_ticket()"
+    ],
+    "expected_tool_calls": "create_ticket()",
+    "retrieved_chunks": [
+      "ESC-1",
+      "REF-2",
+      "REF-6"
+    ],
+    "gold_evidence": [
+      "ESC-1",
+      "REF-2",
+      "REF-6"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC011",
+    "turn": 1,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "26295015",
+    "customer_message": "Hi, my order hasn't arrived yet. Where is it?",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC011",
+    "turn": 2,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "26295015",
+    "customer_message": "The order number is 2629 5015.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=26295015)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=26295015)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC011",
+    "turn": 3,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "26295015",
+    "customer_message": "The last four digits are 8752.",
+    "agent_reply": "Thank you for verifying. Your order 26295015 is currently shipped and is promised for delivery by 22 October 2026 (2026-10-22).",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=26295015, verification_value=8752)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=26295015, verification_value=8752)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC011",
+    "turn": 4,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "26295015",
+    "customer_message": "And what if I'm not at home?",
+    "agent_reply": "If you're not at home, the courier will make up to 3 delivery attempts and send an SMS after a missed attempt so you can reschedule.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-3"
+    ],
+    "gold_evidence": [
+      "DEL-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC012",
+    "turn": 1,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "75447568",
+    "customer_message": "Hi, my order hasn't arrived yet. Where is it?",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC012",
+    "turn": 2,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "75447568",
+    "customer_message": "The order number is 7544 7568.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=75447568)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=75447568)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC012",
+    "turn": 3,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "75447568",
+    "customer_message": "The last four digits are 0654.",
+    "agent_reply": "Thank you for verifying. Your order 75447568 is currently shipped and is promised for delivery by 24 October 2026 (2026-10-24).",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=75447568, verification_value=0654)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=75447568, verification_value=0654)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC012",
+    "turn": 4,
+    "scenario": "where_is_my_order",
+    "language": "en",
+    "order_id": "75447568",
+    "customer_message": "And what if I'm not at home?",
+    "agent_reply": "If you're not at home, the courier will make up to 3 delivery attempts and send an SMS after a missed attempt so you can reschedule.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-3"
+    ],
+    "gold_evidence": [
+      "DEL-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC013",
+    "turn": 1,
+    "scenario": "topic_switch",
+    "language": "hi-en",
+    "order_id": "86152121",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC013",
+    "turn": 2,
+    "scenario": "topic_switch",
+    "language": "hi-en",
+    "order_id": "86152121",
+    "customer_message": "Order number hai 8615 2121.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=86152121)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=86152121)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC013",
+    "turn": 3,
+    "scenario": "topic_switch",
+    "language": "hi-en",
+    "order_id": "86152121",
+    "customer_message": "Last four digits 5568 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=86152121, verification_value=5568)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=86152121, verification_value=5568)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC013",
+    "turn": 4,
+    "scenario": "topic_switch",
+    "language": "hi-en",
+    "order_id": "86152121",
+    "customer_message": "Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?",
+    "agent_reply": "Nahi, aap ek order pe sirf ek (only 1) coupon hi laga sakte hain; do coupons combine nahi kiye ja sakte.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CPN-1"
+    ],
+    "gold_evidence": [
+      "CPN-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC013",
+    "turn": 5,
+    "scenario": "topic_switch",
+    "language": "hi-en",
+    "order_id": "86152121",
+    "customer_message": "Achha. Aur mera order kab ship hua tha?",
+    "agent_reply": "Aapka order 9 October 2026 (2026-10-09) ko ship hua tha.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "TRK-1"
+    ],
+    "gold_evidence": [
+      "TRK-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC014",
+    "turn": 1,
+    "scenario": "topic_switch",
+    "language": "en",
+    "order_id": "10048947",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC014",
+    "turn": 2,
+    "scenario": "topic_switch",
+    "language": "en",
+    "order_id": "10048947",
+    "customer_message": "The order number is 1004 8947.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=10048947)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=10048947)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC014",
+    "turn": 3,
+    "scenario": "topic_switch",
+    "language": "en",
+    "order_id": "10048947",
+    "customer_message": "The last four digits are 9260.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=10048947, verification_value=9260)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=10048947, verification_value=9260)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC014",
+    "turn": 4,
+    "scenario": "topic_switch",
+    "language": "en",
+    "order_id": "10048947",
+    "customer_message": "Okay. Different question: can I use two coupons on my next order?",
+    "agent_reply": "No, you can apply only one (1) coupon per order; coupons cannot be combined.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CPN-1"
+    ],
+    "gold_evidence": [
+      "CPN-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC014",
+    "turn": 5,
+    "scenario": "topic_switch",
+    "language": "en",
+    "order_id": "10048947",
+    "customer_message": "Got it. And going back to my order, when was it shipped?",
+    "agent_reply": "Your order was shipped on 8 October 2026 (2026-10-08).",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "TRK-1"
+    ],
+    "gold_evidence": [
+      "TRK-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC015",
+    "turn": 1,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "84889113",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC015",
+    "turn": 2,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "84889113",
+    "customer_message": "Order number hai 8488 9113.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=84889113)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=84889113)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC015",
+    "turn": 3,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "84889113",
+    "customer_message": "Last four digits 6543 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=84889113, verification_value=6543)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=84889113, verification_value=6543)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC015",
+    "turn": 4,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "84889113",
+    "customer_message": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+    "agent_reply": "Maaf kijiye (sorry), late Standard delivery ke liye policy mein koi voucher ya compensation nahi hai, isliye main voucher nahi de sakti.",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-4",
+      "ESC-4"
+    ],
+    "gold_evidence": [
+      "DEL-4",
+      "ESC-4"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC016",
+    "turn": 1,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "31171629",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC016",
+    "turn": 2,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "31171629",
+    "customer_message": "Order number hai 3117 1629.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=31171629)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=31171629)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC016",
+    "turn": 3,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "31171629",
+    "customer_message": "Last four digits 2987 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=31171629, verification_value=2987)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=31171629, verification_value=2987)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC016",
+    "turn": 4,
+    "scenario": "compensation_demand",
+    "language": "hi-en",
+    "order_id": "31171629",
+    "customer_message": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+    "agent_reply": "Maaf kijiye (sorry), late Standard delivery ke liye policy mein koi voucher ya compensation nahi hai, isliye main voucher nahi de sakti.",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-4",
+      "ESC-4"
+    ],
+    "gold_evidence": [
+      "DEL-4",
+      "ESC-4"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC017",
+    "turn": 1,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "35061733",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC017",
+    "turn": 2,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "35061733",
+    "customer_message": "Order number hai 3506 1733.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=35061733)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=35061733)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC017",
+    "turn": 3,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "35061733",
+    "customer_message": "Last four digits 2743 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=35061733, verification_value=2743)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=35061733, verification_value=2743)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC017",
+    "turn": 4,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "35061733",
+    "customer_message": "Please ise cancel kar do.",
+    "agent_reply": "Main khud order cancel nahi kar sakti, lekin kyunki aapka order abhi ship nahi hua hai, aap ZentroMart app ke My Orders section mein jaakar ise bilkul free cancel kar sakte hain.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CAN-1"
+    ],
+    "gold_evidence": [
+      "CAN-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC018",
+    "turn": 1,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "26403404",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC018",
+    "turn": 2,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "26403404",
+    "customer_message": "Order number hai 2640 3404.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=26403404)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=26403404)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC018",
+    "turn": 3,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "26403404",
+    "customer_message": "Last four digits 4255 hain.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=26403404, verification_value=4255)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=26403404, verification_value=4255)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC018",
+    "turn": 4,
+    "scenario": "cancel_unshipped_order",
+    "language": "hi-en",
+    "order_id": "26403404",
+    "customer_message": "Please ise cancel kar do.",
+    "agent_reply": "Main khud order cancel nahi kar sakti, lekin kyunki aapka order abhi ship nahi hua hai, aap ZentroMart app ke My Orders section mein jaakar ise bilkul free cancel kar sakte hain.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CAN-1"
+    ],
+    "gold_evidence": [
+      "CAN-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC019",
+    "turn": 1,
+    "scenario": "cancel_shipped_order",
+    "language": "hi-en",
+    "order_id": "15911102",
+    "customer_message": "Hello, mujhe order ke baare mein help chahiye.",
+    "agent_reply": "Hello! Main ZentroMart ki AI support assistant hoon. Please apna 8-digit order ID batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC019",
+    "turn": 2,
+    "scenario": "cancel_shipped_order",
+    "language": "hi-en",
+    "order_id": "15911102",
+    "customer_message": "Order number hai 1591 1102.",
+    "agent_reply": "Thank you. Verification ke liye please apne registered phone number ke aakhri 4 digits (last 4 digits) ya delivery pincode batayein.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=15911102)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=15911102)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC019",
+    "turn": 3,
+    "scenario": "cancel_shipped_order",
+    "language": "hi-en",
+    "order_id": "15911102",
+    "customer_message": "Pincode 440010 hai.",
+    "agent_reply": "Verification successful ho gaya hai. Batayein, main aapke is order mein kaise help kar sakti hoon?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=15911102, verification_value=440010)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=15911102, verification_value=440010)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC019",
+    "turn": 4,
+    "scenario": "cancel_shipped_order",
+    "language": "hi-en",
+    "order_id": "15911102",
+    "customer_message": "Mujhe ise cancel karna hai.",
+    "agent_reply": "Aapka order ship ho chuka hai isliye cancel nahi ho sakta, par aap delivery ke waqt parcel lene se mana (refuse) kar sakte hain; parcel warehouse wapas aane par (7 to 10 calendar days) aapka refund initiate ho jayega.",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CAN-2",
+      "REF-1"
+    ],
+    "gold_evidence": [
+      "CAN-2",
+      "REF-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC020",
+    "turn": 1,
+    "scenario": "cancel_shipped_order",
+    "language": "en",
+    "order_id": "43165903",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC020",
+    "turn": 2,
+    "scenario": "cancel_shipped_order",
+    "language": "en",
+    "order_id": "43165903",
+    "customer_message": "The order number is 4316 5903.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=43165903)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=43165903)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC020",
+    "turn": 3,
+    "scenario": "cancel_shipped_order",
+    "language": "en",
+    "order_id": "43165903",
+    "customer_message": "My pincode is 700091.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=43165903, verification_value=700091)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=43165903, verification_value=700091)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC020",
+    "turn": 4,
+    "scenario": "cancel_shipped_order",
+    "language": "en",
+    "order_id": "43165903",
+    "customer_message": "I want to cancel it.",
+    "agent_reply": "Because your order has already shipped, it cannot be cancelled. However, you can refuse or decline the parcel at the door, and your refund will be initiated once the parcel returns to the warehouse (usually within 7 to 10 calendar days).",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "CAN-2",
+      "REF-1"
+    ],
+    "gold_evidence": [
+      "CAN-2",
+      "REF-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC021",
+    "turn": 1,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "77461439",
+    "customer_message": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "agent_reply": "नमस्ते! मैं ZentroMart की AI (कृत्रिम बुद्धिमत्ता) सपोर्ट सहायक हूँ। कृपया अपना 8 अंकों का ऑर्डर नंबर बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC021",
+    "turn": 2,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "77461439",
+    "customer_message": "ऑर्डर नंबर है 7746 1439।",
+    "agent_reply": "धन्यवाद। सुरक्षा जाँच के लिए कृपया अपने रजिस्टर्ड फ़ोन नंबर के आख़िरी 4 अंक (last 4 digits) या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=77461439)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=77461439)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC021",
+    "turn": 3,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "77461439",
+    "customer_message": "आख़िरी चार अंक 1266 हैं।",
+    "agent_reply": "माफ़ कीजिए, यह विवरण मेल नहीं खाया। कृपया एक बार दोबारा अपने फ़ोन के आख़िरी 4 अंक या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=77461439, verification_value=1266)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=77461439, verification_value=1266)",
+    "retrieved_chunks": [
+      "IDV-3"
+    ],
+    "gold_evidence": [
+      "IDV-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC021",
+    "turn": 4,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "77461439",
+    "customer_message": "आख़िरी चार अंक 1266 हैं।",
+    "agent_reply": "माफ़ कीजिए, वेरिफ़िकेशन दोबारा असफल रहा, इसलिए मैं इस ऑर्डर की जानकारी साझा नहीं कर सकती। कृपया अपने रजिस्टर्ड (पंजीकृत) फ़ोन नंबर से सपोर्ट से संपर्क करें।",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [
+      "lookup_order(order_id=77461439, verification_value=1266)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=77461439, verification_value=1266)",
+    "retrieved_chunks": [
+      "IDV-3"
+    ],
+    "gold_evidence": [
+      "IDV-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC022",
+    "turn": 1,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "56646891",
+    "customer_message": "नमस्ते, मुझे अपने ऑर्डर के बारे में मदद चाहिए।",
+    "agent_reply": "नमस्ते! मैं ZentroMart की AI (कृत्रिम बुद्धिमत्ता) सपोर्ट सहायक हूँ। कृपया अपना 8 अंकों का ऑर्डर नंबर बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC022",
+    "turn": 2,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "56646891",
+    "customer_message": "ऑर्डर नंबर है 5664 6891।",
+    "agent_reply": "धन्यवाद। सुरक्षा जाँच के लिए कृपया अपने रजिस्टर्ड फ़ोन नंबर के आख़िरी 4 अंक (last 4 digits) या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=56646891)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=56646891)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC022",
+    "turn": 3,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "56646891",
+    "customer_message": "आख़िरी चार अंक 3357 हैं।",
+    "agent_reply": "माफ़ कीजिए, यह विवरण मेल नहीं खाया। कृपया एक बार दोबारा अपने फ़ोन के आख़िरी 4 अंक या डिलीवरी पिनकोड बताएं।",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=56646891, verification_value=3357)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=56646891, verification_value=3357)",
+    "retrieved_chunks": [
+      "IDV-3"
+    ],
+    "gold_evidence": [
+      "IDV-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC022",
+    "turn": 4,
+    "scenario": "failed_verification",
+    "language": "hi",
+    "order_id": "56646891",
+    "customer_message": "आख़िरी चार अंक 3357 हैं।",
+    "agent_reply": "माफ़ कीजिए, वेरिफ़िकेशन दोबारा असफल रहा, इसलिए मैं इस ऑर्डर की जानकारी साझा नहीं कर सकती। कृपया अपने रजिस्टर्ड (पंजीकृत) फ़ोन नंबर से सपोर्ट से संपर्क करें।",
+    "decision": "refuse",
+    "expected_decision": "refuse",
+    "tool_calls": [
+      "lookup_order(order_id=56646891, verification_value=3357)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=56646891, verification_value=3357)",
+    "retrieved_chunks": [
+      "IDV-3"
+    ],
+    "gold_evidence": [
+      "IDV-3"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC023",
+    "turn": 1,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "22354022",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC023",
+    "turn": 2,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "22354022",
+    "customer_message": "The order number is 2235 4022.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=22354022)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=22354022)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC023",
+    "turn": 3,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "22354022",
+    "customer_message": "The last four digits are 9967.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=22354022, verification_value=9967)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=22354022, verification_value=9967)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC023",
+    "turn": 4,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "22354022",
+    "customer_message": "My express delivery was late. Do I get the fee back?",
+    "agent_reply": "Yes, because your Express delivery arrived after the promised date, the ₹79 express fee was automatically credited to your ZentroMart Wallet on 18 September 2026.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-4"
+    ],
+    "gold_evidence": [
+      "DEL-4"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC024",
+    "turn": 1,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "58634590",
+    "customer_message": "Hi, I need some help with an order.",
+    "agent_reply": "Hello! I am ZentroMart's AI support assistant. Could you please share your 8-digit order ID so I can help?",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "STY-1"
+    ],
+    "gold_evidence": [
+      "STY-1"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC024",
+    "turn": 2,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "58634590",
+    "customer_message": "The order number is 5863 4590.",
+    "agent_reply": "Thank you. To verify your identity, please share the last 4 digits of your registered phone number or your delivery pincode.",
+    "decision": "clarify",
+    "expected_decision": "clarify",
+    "tool_calls": [
+      "lookup_order(order_id=58634590)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=58634590)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC024",
+    "turn": 3,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "58634590",
+    "customer_message": "The last four digits are 8781.",
+    "agent_reply": "Thank you, your identity is verified. How can I help you with this order today?",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [
+      "lookup_order(order_id=58634590, verification_value=8781)"
+    ],
+    "expected_tool_calls": "lookup_order(order_id=58634590, verification_value=8781)",
+    "retrieved_chunks": [
+      "IDV-2"
+    ],
+    "gold_evidence": [
+      "IDV-2"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  },
+  {
+    "conversation_id": "PC024",
+    "turn": 4,
+    "scenario": "express_late_credit",
+    "language": "en",
+    "order_id": "58634590",
+    "customer_message": "My express delivery was late. Do I get the fee back?",
+    "agent_reply": "Yes, because your Express delivery arrived after the promised date, the ₹79 express fee was automatically credited to your ZentroMart Wallet on 29 September 2026.",
+    "decision": "answer",
+    "expected_decision": "answer",
+    "tool_calls": [],
+    "expected_tool_calls": "",
+    "retrieved_chunks": [
+      "DEL-4"
+    ],
+    "gold_evidence": [
+      "DEL-4"
+    ],
+    "passed": true,
+    "dec_ok": true,
+    "tools_ok": true,
+    "ev_ok": true,
+    "missing_facts": [],
+    "forbidden_violations": []
+  }
+]

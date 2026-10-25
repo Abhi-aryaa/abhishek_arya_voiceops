@@ -1,0 +1,21 @@
+# Secrets & Environment Variables (NEVER COMMIT)
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Virtual Environments & Cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Dataset Copies (Keep out of repo per Capstone Brief)
+Capstone_Project_Dataset_FTTT_2026/
+*.zip
+
+# OS Files
+.DS_Store
+Thumbs.db

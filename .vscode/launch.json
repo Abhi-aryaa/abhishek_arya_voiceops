@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. Run Streamlit App (app.py)",
+      "type": "python",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "app.py"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "2. Run Practice Evaluation (run.py --evaluate)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "args": [
+        "--evaluate"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "3. Build Clean Submission ZIP (build_submission_zip.py)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_submission_zip.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

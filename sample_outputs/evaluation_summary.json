@@ -1,0 +1,156 @@
+{
+  "total_questions": 52,
+  "step1_prompt_only_correct": 15,
+  "step1_accuracy_pct": 28.85,
+  "step2_rag_correct": 52,
+  "step2_accuracy_pct": 100.0,
+  "step2_retrieval_exact_match": 52,
+  "step2_retrieval_recall_pct": 100.0,
+  "step4_asr_correct": 52,
+  "step4_asr_accuracy_pct": 100.0,
+  "step4_asr_retrieval_exact": 52,
+  "total_conversations": 23,
+  "total_conversation_turns": 96,
+  "step3_turns_passed": 96,
+  "step3_turn_accuracy_pct": 100.0,
+  "step3_decision_accuracy_pct": 100.0,
+  "step3_tool_call_accuracy_pct": 100.0,
+  "step3_evidence_accuracy_pct": 100.0,
+  "step3_conversations_perfect": 23,
+  "intent_breakdown": {
+    "warranty": {
+      "total": 5,
+      "step1": 0,
+      "step2": 5,
+      "step4_asr": 5
+    },
+    "refund_timeline": {
+      "total": 14,
+      "step1": 1,
+      "step2": 14,
+      "step4_asr": 14
+    },
+    "unsupported": {
+      "total": 5,
+      "step1": 1,
+      "step2": 5,
+      "step4_asr": 5
+    },
+    "return_fee": {
+      "total": 2,
+      "step1": 0,
+      "step2": 2,
+      "step4_asr": 2
+    },
+    "return_eligibility": {
+      "total": 4,
+      "step1": 4,
+      "step2": 4,
+      "step4_asr": 4
+    },
+    "return_window": {
+      "total": 11,
+      "step1": 3,
+      "step2": 11,
+      "step4_asr": 11
+    },
+    "delivery_attempts": {
+      "total": 1,
+      "step1": 1,
+      "step2": 1,
+      "step4_asr": 1
+    },
+    "fraud": {
+      "total": 1,
+      "step1": 1,
+      "step2": 1,
+      "step4_asr": 1
+    },
+    "damaged_item": {
+      "total": 3,
+      "step1": 0,
+      "step2": 3,
+      "step4_asr": 3
+    },
+    "troubleshooting": {
+      "total": 1,
+      "step1": 0,
+      "step2": 1,
+      "step4_asr": 1
+    },
+    "delivery_area": {
+      "total": 1,
+      "step1": 1,
+      "step2": 1,
+      "step4_asr": 1
+    },
+    "cancel_order": {
+      "total": 2,
+      "step1": 2,
+      "step2": 2,
+      "step4_asr": 2
+    },
+    "late_delivery": {
+      "total": 1,
+      "step1": 0,
+      "step2": 1,
+      "step4_asr": 1
+    },
+    "policy_override": {
+      "total": 1,
+      "step1": 1,
+      "step2": 1,
+      "step4_asr": 1
+    }
+  },
+  "scenario_breakdown": {
+    "high_value_damage": {
+      "turns": 4,
+      "passed": 4
+    },
+    "return_eligibility": {
+      "turns": 10,
+      "passed": 10
+    },
+    "human_requested": {
+      "turns": 8,
+      "passed": 8
+    },
+    "repeat_contact": {
+      "turns": 8,
+      "passed": 8
+    },
+    "refund_status": {
+      "turns": 8,
+      "passed": 8
+    },
+    "where_is_my_order": {
+      "turns": 8,
+      "passed": 8
+    },
+    "topic_switch": {
+      "turns": 10,
+      "passed": 10
+    },
+    "compensation_demand": {
+      "turns": 8,
+      "passed": 8
+    },
+    "cancel_unshipped_order": {
+      "turns": 8,
+      "passed": 8
+    },
+    "cancel_shipped_order": {
+      "turns": 8,
+      "passed": 8
+    },
+    "failed_verification": {
+      "turns": 8,
+      "passed": 8
+    },
+    "express_late_credit": {
+      "turns": 8,
+      "passed": 8
+    }
+  }
+}
