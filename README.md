@@ -1,3 +1,8 @@
+# ZentroMart VoiceOps 2026 — Customer Support Agent
+
+- **Public GitHub Repository:** https://github.com/Abhi-aryaa/abhishek_arya_voiceops
+- **Live Deployed Streamlit Web App (Bonus):** https://gnanivoiceops.streamlit.app
+
 # ZentroMart VoiceOps 2026 — Grounded Conversational & Voice Support Agent
 
 **Course:** LLM & Generative AI Course · Consulting & Analytics Club, IIT Guwahati × Gnani.ai  
