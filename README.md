@@ -6,7 +6,7 @@
 # ZentroMart VoiceOps 2026 — Grounded Conversational & Voice Support Agent
 
 **Course:** LLM & Generative AI Course · Consulting & Analytics Club, IIT Guwahati × Gnani.ai  
-**Public Repository:** `https://github.com/Abhi-aryaa/abhishek_arya_voiceops` *(replace with your public GitHub URL before final upload)*
+**Public Repository:** `https://github.com/Abhi-aryaa/abhishek_arya_voiceops` 
 
 ---
 
